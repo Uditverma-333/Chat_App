@@ -65,11 +65,15 @@ $RECYCLE.BIN/
 # Logs and databases
 ############################
 
-.tmp
 *.log
-*.sql
-*.sqlite
-*.sqlite3
+# Remove SQLite ignore
+# *.sqlite
+# *.sqlite3
+
+# Allow SQLite database persistence
+!.tmp/data.db
+!data/database.db
+
 
 
 ############################
