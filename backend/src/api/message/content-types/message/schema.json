@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messages",
+  "info": {
+    "singularName": "message",
+    "pluralName": "messages",
+    "displayName": "Message",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "sender": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "chat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::chat.chat"
+    }
+  }
+}
