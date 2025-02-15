@@ -5,7 +5,7 @@ import ChatSidebar from "../components/Chat/ChatSidebar";
 import ChatWindow from "../components/Chat/ChatWindow";
 import { logout } from "../services/api";
 
-const SOCKET_URL = "http://localhost:8080"; 
+const SOCKET_URL = "https://chat-app-backend-g2ug.onrender.com"; 
 
 const ChatPage = () => {
   const [currentUser, setCurrentUser] = useState(null);

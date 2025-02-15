@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:1337/api';
+const API_URL = 'https://automatic-basket-f95d906e6b.strapiapp.com/api';
 
 // Authentication
 export const login = async (email, password) => {
@@ -103,7 +103,7 @@ export const fetchUserId = async (username) => {
 
   try {
     const response = await axios.get(
-      `http://localhost:1337/api/users?filters[username][$eq]=${username}`
+      `${API_URL}/users?filters[username][$eq]=${username}`
     );
 
     console.log("✅ API Response:", response.data); 
